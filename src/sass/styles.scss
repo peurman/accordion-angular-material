@@ -1,0 +1,10 @@
+@forward "./base/variables";
+@forward "./base/mixins";
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  background-color: grey;
+  min-height: 100vh;
+  margin: 0;
+}
