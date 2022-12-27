@@ -82,12 +82,12 @@ input:checked {
   }
   ~ .tab-content {
     height: auto;
-    max-height: 200vh;
+    max-height: 800vh;
     padding: 1em;
   }
 }
 
-//TABLE
+//Table
 table {
   width: 90%;
   tr td,
@@ -107,11 +107,10 @@ table {
   }
   .images__container {
     @include centerMeColumn;
-    gap: 5px;
     .images__img {
-      width: 180px;
+      width: 160px;
       border-radius: 5px;
-      margin: 3px;
+      margin: 5px;
     }
   }
 }
