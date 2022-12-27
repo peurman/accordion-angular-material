@@ -1,0 +1,4 @@
+@use '../sass/styles.scss' as *;
+.main-accordion-container {
+  @include centerMeColumn;
+}

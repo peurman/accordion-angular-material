@@ -1,10 +1,12 @@
 @use '../../sass/styles.scss' as *;
+
+// Container
 .accordion-container {
   @include centerMeColumn;
   gap: 10px;
 }
 
-//Button
+// Button
 button {
   padding: 7px;
   color: $accordion-color;
@@ -14,7 +16,7 @@ button {
   font-weight: 600;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px -2px $box-shadow-color;
   cursor: pointer;
   transition: 0.3s;
   &:hover {
@@ -28,7 +30,7 @@ button {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 4px -2px $box-shadow-color;
 }
 .tab {
   width: 100%;
@@ -87,7 +89,7 @@ input:checked {
   }
 }
 
-//Table
+// Table
 table {
   width: 90%;
   tr td,
