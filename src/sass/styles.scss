@@ -1,13 +1,26 @@
-@forward "./base/variables";
-@forward "./base/mixins";
+@forward './base/variables';
+@forward './base/mixins';
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   font-size: 18px;
-  background-color: grey;
   min-height: 100vh;
+  color: #462c50;
+  background: #e1dfe3;
+  padding: 0 1em;
   margin: 0;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1 {
+  margin: 0;
+  line-height: 2;
+  text-align: center;
+}
+h2 {
+  margin: 0 0 0.5em;
+  font-weight: normal;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}

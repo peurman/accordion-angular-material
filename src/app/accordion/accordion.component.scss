@@ -1,0 +1,117 @@
+@use '../../sass/styles.scss' as *;
+.accordion-container {
+  @include centerMeColumn;
+  gap: 10px;
+}
+
+//Button
+button {
+  padding: 7px;
+  color: $accordion-color;
+  background: $accordion-background;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: $accordion-background;
+    background: $accordion-color;
+  }
+}
+
+// Accordion
+.tabs {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: $accordion-color;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: $accordion-background;
+    font-weight: bold;
+    cursor: pointer;
+    // Icon
+    &:hover {
+      background: darken($accordion-background, 10%);
+    }
+    &::after {
+      content: '\276F';
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all 0.35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: $accordion-background;
+    background: $accordion-color;
+    transition: all 0.35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $accordion-background;
+    cursor: pointer;
+    &:hover {
+      background: darken($accordion-background, 10%);
+    }
+  }
+}
+// :checked
+input:checked {
+  + .tab-label {
+    background: darken($accordion-background, 10%);
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    height: auto;
+    max-height: 200vh;
+    padding: 1em;
+  }
+}
+
+//TABLE
+table {
+  width: 90%;
+  tr td,
+  tr th {
+    text-align: center;
+  }
+  .logo__img {
+    width: 80px;
+  }
+  tr th {
+    color: $accordion-background;
+    font-weight: bold;
+  }
+  tr td:nth-child(1),
+  tr td:nth-child(2) {
+    font-weight: bold;
+  }
+  .images__container {
+    @include centerMeColumn;
+    gap: 5px;
+    .images__img {
+      width: 180px;
+      border-radius: 5px;
+      margin: 3px;
+    }
+  }
+}
