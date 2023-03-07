@@ -1,6 +1,10 @@
 # ACCORDION CHALLENGE
 
-## Week 5 - Exercise 2
+(created on December 2022)
+<br/>
+* *Deploy*: **<a target="_blank" href="https://accordion-peurman.netlify.app/">HERE</a>**
+
+## Angular Trainee Program - week 5
 
 This is an accordion made with CSS. <br />
 It has a list of cars brands and models organized by origin: <br />
